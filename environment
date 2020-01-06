@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+export CONTECO_LABEL="external.kafka-coonect - ContEco"
+export CONTECO_DESCRIPTION="Confluent Kafka Connect image with ContEco external prerequisites installed."
+
+export CONTECO_TYPE="external"
+export CONTECO_NAME="kafka-connect"
+export CONTECO_TAG="5.3.1"
+
+export CONTECO_BASE="confluentinc/cp-kafka-connect:5.3.1"
+export CONTECO_BUILD="external-mapped"
