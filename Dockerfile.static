@@ -1,5 +1,5 @@
 ##### BEGIN external-mapped/Dockerfile/image-header #####
-FROM confluentinc/cp-kafka-connect:5.3.1
+FROM confluentinc/cp-kafka-connect:5.4.0
 ##### END external-mapped/Dockerfile/image-header #####
 
 ##### BEGIN image/Dockerfile/build-instructions #####
@@ -18,8 +18,8 @@ LABEL io.vcweb.schema-version="1.0" \
       io.vcweb.ecosystem="conteco" \
       io.vcweb.type="external" \
       io.vcweb.name="kafka-connect" \
-      io.vcweb.tag="5.3.1" \
-      io.vcweb.base="confluentinc/cp-kafka-connect:5.3.1" \
+      io.vcweb.tag="5.4.0" \
+      io.vcweb.base="confluentinc/cp-kafka-connect:5.4.0" \
       io.vcweb.build="external-mapped" \
       io.vcweb.label="external.kafka-coonect - ContEco" \
       io.vcweb.description="Confluent Kafka Connect image with ContEco external prerequisites installed." \
