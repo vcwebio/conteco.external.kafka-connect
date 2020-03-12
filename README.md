@@ -1,4 +1,4 @@
-# `external.kafka-connect` - ContEco
+# `external.kafka_connect` - ContEco
 
 Confluent Kafka Connect image with ContEco external prerequisites installed.
 See `conteco.docs.overview` for more information on the ContEco ecosystem.
