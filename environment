@@ -5,7 +5,7 @@ export CONTECO_DESCRIPTION="Confluent Kafka Connect image with ContEco external 
 
 export CONTECO_TYPE="external"
 export CONTECO_NAME="kafka_connect"
-export CONTECO_TAG="5.4.0"
+export CONTECO_TAG="6.0.0"
 
-export CONTECO_BASE="confluentinc/cp-kafka-connect:5.4.0"
+export CONTECO_BASE="confluentinc/cp-kafka-connect:6.0.0"
 export CONTECO_BUILD="external-mapped"

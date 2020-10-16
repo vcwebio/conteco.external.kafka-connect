@@ -4,8 +4,9 @@ FROM $CONTECO_BASE
 
 ##### BEGIN image/Dockerfile/build-instructions #####
 USER root
-RUN apt-get update && apt-get install -y --force-yes gettext && rm -rf /var/cache/apt/*
-RUN wget -O jq https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 && chmod +x ./jq && cp jq /usr/bin
+RUN yum install -y gettext && \
+    yum install -y jq && \
+    rm -rf /var/cache/yum/*
 ##### END image/Dockerfile/build-instructions #####
 
 ##### BEGIN external/Dockerfile/conteco #####
