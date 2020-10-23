@@ -2,15 +2,8 @@
 FROM $CONTECO_BASE
 ##### END external-mapped/Dockerfile/image-header #####
 
-##### BEGIN image/Dockerfile/build-instructions #####
-USER root
-RUN yum install -y gettext && \
-    yum install -y jq && \
-    rm -rf /var/cache/yum/*
-##### END image/Dockerfile/build-instructions #####
-
 ##### BEGIN external/Dockerfile/conteco #####
-COPY ./ /conteco/repo/
+COPY ./healthcheck.sh /etc/confluent/docker/healthcheck.sh
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq:latest
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-ibmmq-sink:latest
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:latest
